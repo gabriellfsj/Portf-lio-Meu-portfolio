@@ -166,10 +166,12 @@
                 <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
+                        <input type="hidden" name="accessKey" value="4d0b8189-3d32-4f5e-a7f6-3ca47a5c5722">
+                        <input type="hidden" name="redirectTo" value="#home">
+                        <input type="text" placeholder="Name" name="name" class="contact__input">
+                        <input type="mail" placeholder="Email" name="email" class="contact__input">
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="button" value="Enviar" class="contact__button button">
                     </form>
                 </div>
